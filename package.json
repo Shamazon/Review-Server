@@ -1,17 +1,36 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
-  "license": "",
-  "engines": {
-    "node": ">=6.13.0"
-  },
+  "name": "shamazon",
+  "version": "1.0.0",
+  "description": "A fullstack Amazon clone",
+  "main": "server/index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelDimitras/hrsf92-front-end-capstone.git",
+    "build": "webpack -d --watch"
+  },
+  "keywords": [
+    "Express",
+    "React",
+    "PostgreSQL"
+  ],
+  "author": "Michael Dimitras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichaelDimitras/hrsf92-front-end-capstone/issues"
+  },
+  "homepage": "https://github.com/MichaelDimitras/hrsf92-front-end-capstone#readme",
   "dependencies": {
+    "express": "^4.16.3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "webpack": "^4.5.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
   }
 }

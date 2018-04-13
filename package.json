@@ -24,6 +24,7 @@
   "homepage": "https://github.com/MichaelDimitras/hrsf92-front-end-capstone#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "moment": "^2.22.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "webpack": "^4.5.0",

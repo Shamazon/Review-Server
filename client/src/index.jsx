@@ -32,7 +32,7 @@ class App extends React.Component {
 
   render() {
     return (
-        <div>
+        <div className='app-container'>
             <h2>Customer Reviews</h2>
             <div className='main-reviews'>
                 <Stars numReviews={Math.floor(Math.random() * 1000)}/>

@@ -6,14 +6,14 @@ var Stars = (props) => {
     }
 
    return (
-        <section className='star-container'>
+        <section>
             <span className='starRating'>
             {stars}
             </span>
             <a className='num-reviews'>{props.numReviews}</a>
             
             <div><a> 5 out of 5 stars </a></div>
-            <div className='grid-container'>
+            <div className='star-grid-container'>
                 <div className='star-breakdown'>
                     <div><a>5 star</a>
                         <span className='star-bar'></span>
@@ -37,7 +37,7 @@ var Stars = (props) => {
                     <button className='write-review-button'>Write a Cutomer Review</button>
                 </div>
             </div>
-        <div><a>See all {props.numReviews} customer reviews</a></div>
+        <div><a className='underline'>See all {props.numReviews} customer reviews</a></div>
         </section>
     )
 }

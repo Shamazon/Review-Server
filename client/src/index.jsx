@@ -10,12 +10,32 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-        product: null,
-        reviews: window.sampleData.reviews
+        product: 0,
+        reviews: []
     }
 
     this.getTopReviews = this.getTopReviews.bind(this);
     this.getRecentReviews = this.getRecentReviews.bind(this);
+    this.getReviews = this.getReviews.bind(this);
+  }
+
+  componentDidMount() {
+    this.getReviews(this.state.product);
+  }
+
+  getReviews (productId) {
+    $.ajax({
+      method: 'GET',
+      url: `/reviews/${productId}`,
+      dataType: 'json',
+      success: (data, status) => {
+        if(status === 'success') {
+          this.setState({reviews: data})
+        } else {
+          this.setState({reviews: []})
+        }
+      }
+    })
   }
 
   getTopReviews() {

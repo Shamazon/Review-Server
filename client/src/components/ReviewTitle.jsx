@@ -4,7 +4,7 @@ var ReviewTitle = (props) => {
 
     var stars = [];
     for(var i = 0; i < 5; i++){
-        if(props.review.starRating >= i) {
+        if(props.review.star_rating >= i) {
             stars.push(<img className='star' src='./img/fullstar.png' />)
         } else {
             stars.push(<img className='star' src='./img/emptystar.png' />)

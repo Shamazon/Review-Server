@@ -1,5 +1,5 @@
-var Stars = (props) => {
-    var stars = [];
+const Stars = (props) => {
+    let stars = [];
     var numStars = [60, 10, 5, 5, 20];
     for(var i = 0; i < 5; i++){
         stars.push(<img className='star' src='./img/fullstar.png' />)
@@ -34,7 +34,7 @@ var Stars = (props) => {
 
                 <div className='share-review'>
                     Share your thoughts with other customers
-                    <button className='write-review-button'>Write a Cutomer Review</button>
+                    <button className='write-review-button'>Write a Customer Review</button>
                 </div>
             </div>
         <div><a className='underline'>See all {props.numReviews} customer reviews</a></div>

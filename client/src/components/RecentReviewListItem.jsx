@@ -2,7 +2,7 @@ import UserInfo from './UserInfo.jsx';
 import ReviewTitle from './ReviewTitle.jsx';
 import ReviewBody from './ReviewBody.jsx';
 
-var RecentReviewListItem = (props) => {
+const RecentReviewListItem = (props) => {
     return (
         <div className='recent-review-container'>
             <UserInfo />

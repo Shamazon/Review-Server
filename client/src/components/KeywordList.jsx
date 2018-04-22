@@ -1,13 +1,13 @@
-var KeywordList = (props) => {
+const KeywordList = (props) => {
     
-    var keywords = [];
+    let keywords = [];
 
-    for(var i = 0; i < 3; i++){
-        var temp = [];
-        for(var j = 0; j < 6; j++) {
+    for(let i = 0; i < 3; i++){
+        let row = [];
+        for(let j = 0; j < 6; j++) {
             temp.push(window.nouns[Math.floor(Math.random() * window.nouns.length)]);
         }
-        keywords.push(temp);
+        keywords.push(row);
     }
 
     return (

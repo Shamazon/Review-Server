@@ -1,6 +1,6 @@
 import ReviewListItem from './ReviewListItem.jsx'
 
-var ReviewList = (props) => {
+const ReviewList = (props) => {
     return (
         <section>
             <h3>Top customer reviews</h3>

@@ -1,7 +1,7 @@
 import CustomerImages from './CustomerImages.jsx';
 import RecentReviewListItem from './RecentReviewListItem.jsx';
 
-var RecentReviewList = (props) => {
+const RecentReviewList = (props) => {
     return (
         <div>
             <CustomerImages />

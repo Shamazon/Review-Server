@@ -55,12 +55,15 @@ class App extends React.Component {
         <div className='app-container'>
             <h2>Customer Reviews</h2>
             <div className='main-reviews'>
-                <Stars numReviews={Math.floor(Math.random() * 1000)}/>
+                <Stars numReviews={this.state.reviews.length}/>
                 <KeywordList />
                 <ReviewList reviews={this.getTopReviews()} />
             </div>
             <div className='recent-reviews'>
                 <RecentReviewList reviews={this.getRecentReviews()} />
+            </div>
+            <div><a className='underline'>See all {this.state.reviews.length} customer reviews</a>
+            <button className='write-review-button'>Write a Customer Review</button>
             </div>
         </div>
     )   

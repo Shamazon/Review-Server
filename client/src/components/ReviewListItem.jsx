@@ -8,7 +8,7 @@ var ReviewListItem = (props) => {
             <UserInfo />
             <ReviewTitle review={props.review} />
             <div>
-                <span className='gray'>Color: merry christmas</span>
+                <span className='gray'>Color: {window.nouns[Math.floor(Math.random() * window.nouns.length)]}</span>
                 <span className='seperator'>|</span>
                 <span className='verified'>Verified Purchase</span>
             </div>

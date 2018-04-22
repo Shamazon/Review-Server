@@ -3,11 +3,11 @@ const KeywordList = (props) => {
     let keywords = [];
 
     for(let i = 0; i < 3; i++){
-        let temp = [];
+        let row = [];
         for(let j = 0; j < 6; j++) {
             temp.push(window.nouns[Math.floor(Math.random() * window.nouns.length)]);
         }
-        keywords.push(temp);
+        keywords.push(row);
     }
 
     return (

@@ -32,7 +32,7 @@ class App extends React.Component {
         if(status === 'success') {
           this.setState({reviews: data});
         } else {
-          this.setState({recent: [], top: [], count: []});
+          this.setState({reviews: {recent: [], top: [], count: []}});
         }
       }
     })
@@ -51,7 +51,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.reviews)
     return (
         <div className='app-container'>
             <h2>Customer Reviews</h2>

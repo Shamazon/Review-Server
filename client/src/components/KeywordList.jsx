@@ -5,7 +5,7 @@ const KeywordList = (props) => {
     for(let i = 0; i < 3; i++){
         let row = [];
         for(let j = 0; j < 6; j++) {
-            temp.push(window.nouns[Math.floor(Math.random() * window.nouns.length)]);
+            row.push(window.nouns[Math.floor(Math.random() * window.nouns.length)]);
         }
         keywords.push(row);
     }

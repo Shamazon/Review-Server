@@ -1,4 +1,4 @@
-const { Client } = require('pg');
+const { Pool } = require('pg');
 
 const config = {
   user: 'michaeldimitras', // env var: PGUSER
@@ -7,13 +7,13 @@ const config = {
   port: 5432, // env var: PGPORT
 };
 
-const client = new Client(config);
+const pool = new Pool(config);
 
-client.connect();
+pool.connect();
 
 // Get all reviews for a particular product
 const getReviewsByProduct = (productId, serverRes) => {
-  client.query(`SELECT * FROM reviews WHERE product_id = ${productId}`, (err, dbRes) => {
+  pool.query(`SELECT * FROM reviews WHERE product_id = ${productId}`, (err, dbRes) => {
     if (err) {
       throw err;
     }

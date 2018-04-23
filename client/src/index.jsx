@@ -11,7 +11,7 @@ class App extends React.Component {
 
     this.state = {
         product: 0,
-        reviews: []
+        reviews: {recent: [], top: [], count: []}
     }
 
     this.getTopReviews = this.getTopReviews.bind(this);
@@ -30,9 +30,9 @@ class App extends React.Component {
       dataType: 'json',
       success: (data, status) => {
         if(status === 'success') {
-          this.setState({reviews: data})
+          this.setState({reviews: data});
         } else {
-          this.setState({reviews: []})
+          this.setState({reviews: {recent: [], top: [], count: []}});
         }
       }
     })
@@ -41,13 +41,13 @@ class App extends React.Component {
   getTopReviews() {
     //Return the most helpful reviews 
     //To be used in the '.main-reviews' section on the left of the page
-    return this.state.reviews.slice(0,10);
+    return this.state.reviews.top;
   }
 
   getRecentReviews() {
     //Return the most recent reviews
     //To be used in the '.recent-reviews' section on the right of the page
-    return this.state.reviews.slice(0,10);
+    return this.state.reviews.recent;
   }
 
   render() {
@@ -55,14 +55,14 @@ class App extends React.Component {
         <div className='app-container'>
             <h2>Customer Reviews</h2>
             <div className='main-reviews'>
-                <Stars numReviews={this.state.reviews.length}/>
+                <Stars numReviews={this.state.reviews.count}/>
                 <KeywordList />
                 <ReviewList reviews={this.getTopReviews()} />
             </div>
             <div className='recent-reviews'>
                 <RecentReviewList reviews={this.getRecentReviews()} />
             </div>
-            <div><a className='underline'>See all {this.state.reviews.length} customer reviews</a>
+            <div><a className='underline'>See all {this.state.reviews.count} customer reviews</a>
             <button className='write-review-button'>Write a Customer Review</button>
             </div>
         </div>

@@ -11,31 +11,28 @@ const pool = new Pool(config);
 
 pool.connect();
 
-// Get all reviews for a particular product
 const getReviewsByProduct = (productId, serverRes) => {
   pool.query(`SELECT * FROM reviews WHERE product_id = ${productId} ORDER BY date DESC LIMIT 10`, (err, recentReviewsRes) => {
     if (err) {
       throw err;
     }
     pool.query(`SELECT * FROM reviews WHERE product_id = ${productId} ORDER BY (helpful - unhelpful) DESC LIMIT 8`, (err, topReviewsRes) => {
+      if (err) {
+        throw err;
+      }
+      pool.query(`SELECT COUNT(id) FROM reviews WHERE product_id = ${productId}`, (err, countRes) => {
         if (err) {
           throw err;
         }
-        pool.query(`SELECT COUNT(id) FROM reviews WHERE product_id = ${productId}`, (err, countRes) => {
-          if (err) {
-            throw err;
-          }
-          serverRes.status(200).send({recent: recentReviewsRes.rows, top: topReviewsRes.rows, count: countRes.rows[0].count});
-        }) 
-    })
+        serverRes.status(200)
+          .send({
+            recent: recentReviewsRes.rows,
+            top: topReviewsRes.rows,
+            count: countRes.rows[0].count,
+          });
+      });
+    });
   });
 };
-
-/*
- *   To-do:
- *     Get recent reviews
- *     Get top reviews
- *     Post new review
- */
 
 module.exports.getReviewsByProduct = getReviewsByProduct;

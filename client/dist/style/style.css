@@ -1,23 +1,4 @@
-@font-face {
-  font-family: 'AmazonEmber';
-  src: url('../fonts/AmazonEmber_Bd.ttf');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'AmazonEmber';
-  src: url('../fonts/AmazonEmber_Lt.ttf');
-  font-weight: lighter;
-}
-
-@font-face {
-  font-family: 'AmazonEmber';
-  src: url('../fonts/AmazonEmber_Rg.ttf');
-  font-weight: normal;
-}
-
-html {
-    font-family: 'AmazonEmber', 'Arial', sans-serif;
+* {
     background-color: rgb(250,250,250);
     font-size: 13px;
     line-height: 19px;
@@ -43,15 +24,15 @@ a:hover {
     color: #bc7719;
 }
 
-.a-primary {
+.aPrimary {
     color: #0066c0;
 }
 
-.a-secondary {
+.aSecondary {
     color: #767676;
 }
 
-.a-secondary:hover {
+.aSecondary:hover {
     color: #ac6b13;
 }
 
@@ -85,18 +66,18 @@ h3 {
 /*
  * Index component
  */
-.app-container {
+.appContainer {
     display: grid;
     grid-template-columns: 651.5px 315.5px;
 }
 
-.main-reviews {
+.mainReviews {
     grid-column-start: 1; 
     grid-column-end: 1;
     margin: 0 5px 0 5px;
 }
 
-.recent-reviews {
+.recentReviews {
     grid-column-start: 2; 
     grid-column-end: 2;
     margin: 0 5px 0 5px;
@@ -105,22 +86,22 @@ h3 {
 /*
  * Star component
  */
-.star-grid-container {
+.starGridContainer {
     display: grid;
     grid-template-columns: 185px 485px;
     margin-top: 10px;
 }
 
-.star-grid-container a:hover {
+.starGridContainer a:hover {
     text-decoration: underline;
 }
 
-.star-breakdown {
+.starBreakdown {
     grid-column-start: 1; 
     grid-column-end: 1;
 }
 
-.star-bar {
+.starBar {
     display: inline-block;
     width: 75px;
     height: 12px;
@@ -132,12 +113,12 @@ h3 {
     border-top: 1px solid rgb(173,177,184);
 }
 
-.share-review {
+.shareReview {
     grid-column-start: 2; 
     grid-column-end: 2;
 }
 
-.write-review-button {
+.writeReviewButton {
     width: 164px;
     height: 29px;
     display: block;
@@ -145,7 +126,7 @@ h3 {
     margin-top: 18px;
 }
 
-.num-reviews {
+.numReviews {
     font-size: 17px;
     line-height: 1.255;
     margin-left: 5px;
@@ -168,7 +149,7 @@ h3 {
 /*
  * UserInfo component
  */
-.user-section {
+.userSection {
     padding: 10px 0 10px 0;
 }
 
@@ -178,12 +159,9 @@ h3 {
     border-radius: 50%;
 }
 
-.user-name {
+.userName {
     position: relative;
     word-wrap: break-word
-    /*top: 50%;
-    transform: translateY(-50%);*/
-    /*margin: 20% 0 20% 0;*/
 }
 
 /*
@@ -193,7 +171,7 @@ h3 {
     height: 15px;
 }
 
-.review-title {
+.reviewTitle {
     color: #111;
     font-weight: 900; 
     margin-left: 4px;
@@ -209,11 +187,11 @@ h3 {
     line-height: 1.465;
 }
 
-.main-review-container {
+.mainReviewContainer {
     margin-bottom: 22px;
 }
 
-.main-review-container .review-body {
+.mainReviewContainer .reviewBody {
   max-height: 314px;
   text-overflow: clip;
 
@@ -242,21 +220,21 @@ h3 {
 /*
  * customerImages Component
  */
- .customer-images {
+ .customerImages {
     margin: 8px 0 8px 0;
  }
 
- .customer-images img {
+ .customerImages img {
     margin-right: 5px;
  }
 
 /* 
  * RecentReviewListItem Component
  */
- .recent-review-container {
+ .recentReviewContainer {
     margin-bottom: 22px;
  }
- .recent-reviews .review-body {
+ .recentReviews .reviewBody {
   max-height: 73px;
   text-overflow: ellipsis;
   overflow: hidden;

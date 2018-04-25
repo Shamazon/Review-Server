@@ -1,5 +1,6 @@
 import CustomerImages from './CustomerImages.jsx';
 import RecentReviewListItem from './RecentReviewListItem.jsx';
+import style from '../../dist/style/style.css'
 
 const RecentReviewList = (props) => {
     return (

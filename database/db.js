@@ -1,8 +1,8 @@
 const { Pool } = require('pg');
 
 const config = {
-  user: 'michaeldimitras', // env var: PGUSER
-  database: 'reviews', // env var: PGDATABASE
+  user: 'shamazon', // env var: PGUSER
+  database: 'shamazondb', // env var: PGDATABASE
   password: null, // env var: PGPASSWORD
   port: 5432, // env var: PGPORT
 };

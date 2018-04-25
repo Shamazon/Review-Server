@@ -7,7 +7,6 @@ const Index = (props) => {
   return <App product={props.params.id} />
 }
 
-
 class Routes extends React.Component {
   render() {
     return (

@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import style from '../../dist/style/style.css'
 import Stars from './Stars.jsx';
 import RecentReviewList from './RecentReviewList.jsx';
 import ReviewList from './ReviewList.jsx';
 import KeywordList from './KeywordList.jsx';
+
 
 class App extends React.Component {
   constructor(props) {

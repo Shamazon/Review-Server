@@ -1,4 +1,5 @@
 import ReviewListItem from './ReviewListItem.jsx'
+import style from '../../dist/style/style.css'
 
 const ReviewList = (props) => {
     return (

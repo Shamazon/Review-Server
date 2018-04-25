@@ -7,7 +7,6 @@ const Index = (props) => {
   return <App product={props.params.id} />
 }
 
-
 class Routes extends React.Component {
   render() {
     return (
@@ -19,6 +18,6 @@ class Routes extends React.Component {
   }
 }
 
-ReactDOM.render(React.createElement(Routes), document.getElementById('app'));
+// ReactDOM.render(React.createElement(Routes), document.getElementById('app'));
 
 export default Routes;

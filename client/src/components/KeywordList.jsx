@@ -1,3 +1,5 @@
+import style from '../../dist/style/style.css'
+
 const KeywordList = (props) => {
     
     let keywords = [];
@@ -15,7 +17,7 @@ const KeywordList = (props) => {
             <h3>Read reviews that mention</h3>
                 {keywords.map((row, rIndex) => 
                     <div>
-                        {row.map((word, index) => <span className='keyword'>{word}</span>)}
+                        {row.map((word, index) => <span className={style.keyword}>{word}</span>)}
                     </div>)}
         </section>
     )

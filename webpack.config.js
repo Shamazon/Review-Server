@@ -12,12 +12,32 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?/,
+        test: /\.jsx$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
-        },
+          options: {
+            presets: ['env']
+          }
+        }
       },
+      {
+        test: /(\.css$)/,
+        use: [
+          'style-loader', 
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: '[name]__[local]___[hash:base64:5]'
+            }
+          }  
+        ]
+      },
+      { 
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+        loader: 'url-loader?limit=100000' 
+      }
     ],
   },
 };

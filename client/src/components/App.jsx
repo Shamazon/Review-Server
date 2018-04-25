@@ -40,24 +40,26 @@ class App extends React.Component {
 
   render() {
     return (
-        <div className='app-container'>
+        <div className={style.appContainer}>
             <h2>Customer Reviews</h2>
-            <div className='main-reviews'>
+            <div className={style.mainReviews}>
                 <Stars numReviews={this.state.reviews.count}/>
                 <KeywordList />
                 <ReviewList reviews={this.state.reviews.top} />
             </div>
-            <div className='recent-reviews'>
+            <div className={style.recentReviews}>
                 <RecentReviewList reviews={this.state.reviews.recent} />
             </div>
             <div>
-              <a className='underline'>See all {this.state.reviews.count} customer reviews</a>
-              <button className='write-review-button'>Write a Customer Review</button>
+              <a className={style.underline}>See all {this.state.reviews.count} customer reviews</a>
+              <button className={style.writeReviewButton}>Write a Customer Review</button>
             </div>
         </div>
 
     )   
   }
 }
+
+ReactDOM.render(React.createElement(App), document.getElementById('app'));
 
 export default App;

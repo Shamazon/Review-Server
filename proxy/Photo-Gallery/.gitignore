@@ -23,8 +23,5 @@ coverage
 # Compiled Dirs (http://nodejs.org/api/addons.html)
 build/
 
-# React Router #
-client/src/Routes.jsx
-
-# Bundle.js #
-client/dist/js/bundle.js
+# Example 
+/example

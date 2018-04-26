@@ -27,4 +27,4 @@ build/
 client/src/Routes.jsx
 
 # Bundle.js #
-client/dist/js/bundle.js
+*/bundle.js

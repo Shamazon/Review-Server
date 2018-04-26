@@ -31,7 +31,7 @@
 
 .rightArrow {
   display: inline-block;
-  background: url('/images/AmazonUIBaseCSS-sprites.png') -210px -10px;
+  background: url('/img/AmazonUIBaseCSS-sprites.png') -210px -10px;
   width:22px;
   height: 35px;
   margin: 0 auto;
@@ -39,7 +39,7 @@
 
 .leftArrow {
   display: inline-block;
-  background: url('/images/AmazonUIBaseCSS-sprites.png') -245px -12px;
+  background: url('/img/AmazonUIBaseCSS-sprites.png') -245px -12px;
   width:22px;
   height: 35px;
   margin: 0 auto;

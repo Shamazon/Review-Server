@@ -6,7 +6,6 @@ import RecentReviewList from './RecentReviewList.jsx';
 import ReviewList from './ReviewList.jsx';
 import KeywordList from './KeywordList.jsx';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);

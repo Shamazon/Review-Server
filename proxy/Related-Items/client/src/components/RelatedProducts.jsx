@@ -7,8 +7,11 @@ import styles from './styles/Products.css';
 
 export default (props) => {
 
-  const productsClassName = 'Products__inner___2mjZo';
-  const goLeftClassName = 'Products__goLeft___3ROMB';
+  //const productsClassName = 'Products__inner___2mjZo';
+  //const goLeftClassName = 'Products__goLeft___3ROMB';
+  
+  const productsClassName = 'innerProducts';
+  const goLeftClassName = 'goLeft';
 
   const scrollRight = (event) => {
     document.getElementsByClassName(productsClassName)[0].scrollLeft += 500;
@@ -38,7 +41,7 @@ export default (props) => {
     return (<div className={styles.relatedProducts}>
       
       
-      <div className={styles.inner}>
+      <div className={`${styles.inner} innerProducts`}>
         {props.products.map((product) => (
           <Product
             product={product}
@@ -48,7 +51,7 @@ export default (props) => {
       </div>
 
       <button
-        className={styles.goLeft}
+        className={`${styles.goLeft} goLeft`}
         style={{display: props.showLeftButton ? 'block' : 'none'}}
         onClick={scrollLeft}
         id="leftButton"

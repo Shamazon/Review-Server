@@ -6,6 +6,7 @@ import CustomerReviews from './customerReviews.jsx';
 import PriceBox from './PriceBox.jsx';
 import Stock from './Stock.jsx';
 import ItemDescription from './ItemDescription.jsx';
+import style from '../index.css';
 
 class App extends Component {
   constructor(props) {
@@ -113,19 +114,19 @@ class App extends Component {
    */
   renderedTotalInventory() {
     if (this.state.data[0]['Inventory Amount'] > 15) {
-      return (<div id="inStock" className="colorGreen size-medium"> In Stock. </div>);
+      return (<div id="inStock" className={`${style.colorGreen} ${style.sizeMedium}`}> In Stock. </div>);
     } else if (this.state.data[0]['Inventory Amount'] < 15 && this.state.data[0]['Inventory Amount'] > 0) {
-      return (<div id="inStockQuantityCount" className="colorRed size-medium"> Only {this.state.data[0]['Inventory Amount']} left in stock (more on the way). </div>);
+      return (<div id="inStockQuantityCount" className={`${style.colorRed} ${style.sizeMedium}`}> Only {this.state.data[0]['Inventory Amount']} left in stock (more on the way). </div>);
     }
-    return (<div id="notInStock" className="colorRed size-medium"> Currently Unavailable </div>);
+    return (<div id="notInStock" className={`${style.colorRed} ${style.sizeMedium}`}> Currently Unavailable </div>);
   }
 
   //  Refactor Description into Array. Do it in Database Query after MVP
 
   render() {
     return (
-      <div className="App">
-        <div id="flexBox" className="feature">
+      <div className={style.App}>
+        <div id="flexBox" className={style.feature}>
           <Title
             brandName={this.state.data[0]['Brand Name']}
             titleName={this.state.data[0].Title}
@@ -147,9 +148,5 @@ class App extends Component {
     );
   }
 }
-
-App.propTypes = {
-  id: PropTypes.number,
-};
 
 export default App;

@@ -23,7 +23,7 @@ const Layout = (props) => {
         </div>
       </div>
         <Related id={props.params.id} />
-        <div className={style.quesitons} >
+        <div className={style.questions} >
         </div>
         <Reviews product={props.params.id} />
         <Related id={props.params.id} />

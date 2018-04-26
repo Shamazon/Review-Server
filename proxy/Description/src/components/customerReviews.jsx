@@ -9,7 +9,7 @@ class CustomerReviews extends Component {
         {/* create a function that creates dynamic Classnames for astar */}
         <div
           id="averageCustomerReviewImage"
-          className={`${style.iconStar} ${style.astar}${this.props.starIcon} ${style.amazonIcon}`}
+          className={`${style.iconStar} ${style.astar30} ${style.amazonIcon}`}
           aria-label={this.props.averageStars}
           title={`${this.props.averageStars} out of 5 stars`}
         />

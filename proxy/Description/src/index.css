@@ -109,7 +109,7 @@ a, a:visited, a:active {
   color:#B12704!important
 }
 .amazonIcon {
-    background-image: url(./Images-To-Redis/ShamazonIcons.png);
+    background-image: url(/img/ShamazonIcons.png);
     -webkit-background-size: 400px 900px;
     background-size: 400px 900px;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ a, a:visited, a:active {
 }
 
 .ifItemPrimeImage {
-    background-image: url(./Images-To-Redis/ShamazonIcons.png);
+    background-image: url(/img/ShamazonIcons.png);
     height: 15px;
     width: 54px;
     background-position: -5px -490px;

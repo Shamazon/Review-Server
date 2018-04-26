@@ -4,12 +4,13 @@ import style from '../index.css';
 
 class CustomerReviews extends Component {
   render() {
+    const numStars = `style.astar${this.props.starIcon}`
     return (
       <div id="customerReviews">
         {/* create a function that creates dynamic Classnames for astar */}
         <div
           id="averageCustomerReviewImage"
-          className={`${style.iconStar} ${style.astar30} ${style.amazonIcon}`}
+          className={`${style.iconStar} ${numStars} ${style.amazonIcon}`}
           aria-label={this.props.averageStars}
           title={`${this.props.averageStars} out of 5 stars`}
         />

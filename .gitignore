@@ -25,3 +25,6 @@ build/
 
 # React Router #
 client/src/Routes.jsx
+
+# Bundle.js #
+client/dist/js/bundle.js

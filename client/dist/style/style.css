@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(250,250,250);
+    /*background-color: rgb(250,250,250);*/
     font-size: 13px;
     line-height: 19px;
 }
@@ -15,13 +15,13 @@ button:hover {
     background-color: #d0d0d0;
 }
 
-a {
+a, a:visited, a:active {
     cursor: pointer;
     color: #0066c0;
 }
 
 a:hover {
-    color: #bc7719;
+    color: darkorange
 }
 
 .aPrimary {
@@ -68,7 +68,7 @@ h3 {
  */
 .appContainer {
     display: grid;
-    grid-template-columns: 651.5px 315.5px;
+    grid-template-columns: 800px 315px;
 }
 
 .mainReviews {

@@ -7,6 +7,7 @@ import Photo from './photo.jsx';
 import Photolist from './photoList.jsx';
 import Example from './example.jsx';
 import styles from '../styles/styles.js';
+import style from '../../dist/styles.css'
 
 class App extends React.Component {
     constructor(props) {
@@ -85,17 +86,17 @@ class App extends React.Component {
     render () {
         return (
             <div>
-                <div className="main">
+                <div className={style.main}>
                     <div>
                         <Photolist hoverPicture={this.hoverPicture} photos={this.state.photoArray}/>
                     </div>
-                    <div className="zoom">
-                        <img className="zoomImage" 
+                    <div className={style.zoom}>
+                        <img className={style.zoomImage} 
                             src={this.state.photo} 
                             onMouseOver={this.hoverInstruction}
                             onMouseOut={this.hoverInstruction} 
                             onClick={this.openModal}/> 
-                        <div className="description">
+                        <div className={style.description}>
                         {this.state.instruction ? 'Roll over image to zoom in' : 'Click to open expanded view'}
                         </div>
                     </div>
@@ -107,18 +108,18 @@ class App extends React.Component {
                     style={styles.customStyles}
                     contentLabel="Picture Modal">
                     
-                    <button className="close" onClick={this.closeModal}>X</button>
+                    <button className={style.close} onClick={this.closeModal}>X</button>
                     <br></br>
                     <br></br>
-                    <div className="modalContainer">
-                        <img className="modalPic" src={this.state.photo}/>
+                    <div className={style.modalContainer}>
+                        <img className={style.modalPic} src={this.state.photo}/>
                         
-                        <div className="information">
-                            <div className="modalDivName">Name: {this.state.name}</div>
+                        <div className={style.information}>
+                            <div className={style.modalDivName}>Name: {this.state.name}</div>
                             <br></br>
-                            <div className="modalDivDescription">Description: {this.state.description}</div>
+                            <div className={style.modalDivDescription}>Description: {this.state.description}</div>
                             <br></br>
-                            <div className="modalListContainer">
+                            <div className={style.modalListContainer}>
                                 <Photolist clickPicture={this.clickPicture} photos={this.state.photoArray}/>
                             </div>
                         </div>

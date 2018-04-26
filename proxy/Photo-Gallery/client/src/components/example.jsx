@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactImageMagnify from 'react-image-magnify';
+import style from '../../dist/styles.css'
 
 // const {
 //     default: ReactImageMagnify
@@ -29,8 +30,8 @@ import ReactImageMagnify from 'react-image-magnify';
     
     render() {
       return (
-        <div className="perimeter">
-          <div className="image">
+        <div className={style.perimeter}>
+          <div className={style.image}>
             <ReactImageMagnify {...{
               smallImage: {
                 alt: 'Wristwatch by Ted Baker London',

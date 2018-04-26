@@ -1,32 +1,15 @@
-@font-face {
-  font-family: 'AmazonFont';
-  src: url('./fonts/amazon.woff2') format('woff2');
-}
-
-@font-face{
-  font-family: 'AmazonFontBold';
-  src: url('./fonts/amazonBold.woff2') format('woff2');
-}
-
-body {
-  margin: 30px;
-  font-size: 25px;
-  font-family: 'AmazonFont', sans-serif;;
-}
-  b {
-    font-family: 'AmazonFontBold', sans-serif;;
+b {
     font-weight: 700;
   }
 
 .App {
-  font-family: 'AmazonFont', sans-serif;
   font-size: 13px;
   line-height: 19px;
   color: #111;
   display:flex;
-  width: 33%;
+  /*width: 33%;*/
+    margin: 30px;
 }
-
 
 .priceBox {
   display:flex;
@@ -51,56 +34,47 @@ li::before {
   width: 1em;
   margin-left: -1em}
 
-.App-intro {
-  font-size: 1005px;
-}
-
 a, a:visited, a:active {
   color: #0066c0;
 }
 
-a:hover {
-  color: darkorange
-}
-
-.icon-star {
+.iconStar {
   width: 80px;
   height: 18px;
 }
 
-
-.astar-05 {
+.astar05 {
   background-position: -238px -368px;
 }
-.astar-15 {
+.astar15 {
   background-position: -222px -368px;
 }
-.astar-25 {
+.astar25 {
   background-position: -205px -368px;
 }
-.astar-35 {
+.astar35 {
   background-position: -190px -368px;
 }
-.astar-45 {
+.astar45 {
   background-position: -175px -368px;
 }
 
-.astar-00 {
+.astar00 {
   background-position: -84px -368px;
 }
-.astar-10 {
+.astar10 {
   background-position: -68px -368px;
 }
-.astar-20 {
+.astar20 {
   background-position: -52px -368px;
 }
-.astar-30 {
+.astar30 {
   background-position: -36px -368px;
 }
-.astar-40 {
+.astar40 {
   background-position: -21px -368px;
 }
-.astar-50 {
+.astar50 {
   background-position: -6px -368px;
 }
 
@@ -117,7 +91,7 @@ a:hover {
   opacity: 1
 }
 
-.size-medium {
+.sizeMedium {
   text-rendering: optimizeLegibility;
   font-size: 17px!important;
   line-height: 1.255!important;
@@ -134,7 +108,7 @@ a:hover {
 .colorRed {
   color:#B12704!important
 }
-.amazon-icon {
+.amazonIcon {
     background-image: url(./Images-To-Redis/ShamazonIcons.png);
     -webkit-background-size: 400px 900px;
     background-size: 400px 900px;

@@ -6,7 +6,6 @@ import RecentReviewList from './RecentReviewList.jsx';
 import ReviewList from './ReviewList.jsx';
 import KeywordList from './KeywordList.jsx';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -59,7 +58,5 @@ class App extends React.Component {
     )   
   }
 }
-
-ReactDOM.render(React.createElement(App), document.getElementById('app'));
 
 export default App;

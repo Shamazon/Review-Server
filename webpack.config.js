@@ -12,6 +12,9 @@ module.exports = {
   module: {
     rules: [
       {
+        exclude:  path.resolve(__dirname, './proxy/Description/src/components/')
+      },
+      {
         test: /\.jsx$/,
         exclude: /(node_modules)/,
         use: {
@@ -34,10 +37,15 @@ module.exports = {
           }  
         ]
       },
-      { 
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
-        loader: 'url-loader?limit=100000' 
-      }
+      {
+        test: /\.(png|jpg|gif|ttf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}  
+          }
+        ]
+      },
     ],
   },
 };

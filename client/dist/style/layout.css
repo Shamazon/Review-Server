@@ -1,0 +1,58 @@
+.header {
+  background-image: url("/../img/layout/header.png");
+  width: 100vw;
+  height: 140px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.descriptionContainer {
+    display: grid;
+    grid-template-columns: 450px 550px 244px;
+}
+
+.photo {
+    grid-column-start: 1; 
+    grid-column-end: 1;
+    margin: 0 5px 0 5px;
+}
+
+.description {
+    grid-column-start: 2; 
+    grid-column-end: 2;
+    margin: 0 5px 0 5px;
+}
+
+
+.boughtTogether {
+    margin: 0 5px 0 25px;
+    height: 285px;
+    background-image: url("/../img/layout/boughtTogether.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.buyPhoto {
+    grid-column-start: 3; 
+    grid-column-end: 3;
+    margin: 0 5px 0 5px;
+    background-image: url("/../img/layout/buy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.questions {
+  background-image: url("/../img/layout/questions.png");
+  width: 100vw;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-image: url("/../img/layout/footer.png");
+  width: 100vw;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

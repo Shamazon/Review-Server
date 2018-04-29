@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import $ from 'jquery';
 import style from '../../dist/style/style.css'
 import Stars from './Stars.jsx';
 import RecentReviewList from './RecentReviewList.jsx';
@@ -22,7 +22,8 @@ class App extends React.Component {
   }
 
   getReviews () {
-    let product = this.props.product ? this.props.product : 0; 
+
+    let product = !isNaN(parseInt(this.props.product)) ? parseInt(this.props.product) : 0; 
     $.ajax({
       method: 'GET',
       url: `/reviews/${product}`,

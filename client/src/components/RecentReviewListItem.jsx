@@ -1,3 +1,4 @@
+import React from 'react';
 import UserInfo from './UserInfo.jsx';
 import ReviewTitle from './ReviewTitle.jsx';
 import ReviewBody from './ReviewBody.jsx';

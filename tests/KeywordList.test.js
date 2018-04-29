@@ -1,9 +1,13 @@
+import React from 'react';
 import KeywordList from '../client/src/components/KeywordList.jsx';
-import { shallow } from 'enzyme';
+import enzyme from 'enzyme';
 
-describe('<KeywordList />', () => {
+describe('KeywordList', () => {
+  it('should be defined', () => {
+    expect(KeywordList).toBeDefined();
+  });
   it('should render 18 `.keyword` elements', () => {
-    const wrapper = shallow(<KeywordList />);
-    expect(wrapper.find('.keyword')).to.have.length(18);
+    const wrapper = enzyme.mount(<KeywordList />);
+    expect(wrapper.find('.keyword')).toHaveLength(18);
   });
 });

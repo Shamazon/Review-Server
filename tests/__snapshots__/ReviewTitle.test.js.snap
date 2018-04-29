@@ -1,0 +1,357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewTitle should render correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReviewTitle
+    review={
+      Object {
+        "date": "Sep 15th 2017 9:30:00 am",
+        "starRating": 5,
+        "title": "test",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span>
+          <img
+            className="star"
+            src="./img/emptystar.png"
+          />
+          <img
+            className="star"
+            src="./img/emptystar.png"
+          />
+          <img
+            className="star"
+            src="./img/emptystar.png"
+          />
+          <img
+            className="star"
+            src="./img/emptystar.png"
+          />
+          <img
+            className="star"
+            src="./img/emptystar.png"
+          />
+        </span>,
+        <a
+          className="reviewTitle underline"
+        >
+          test
+        </a>,
+        <div
+          className="gray"
+        >
+          Invalid date
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />,
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />,
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />,
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />,
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "className": "star",
+              "src": "./img/emptystar.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "className": "star",
+              "src": "./img/emptystar.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "className": "star",
+              "src": "./img/emptystar.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "className": "star",
+              "src": "./img/emptystar.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "className": "star",
+              "src": "./img/emptystar.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "test",
+          "className": "reviewTitle underline",
+        },
+        "ref": null,
+        "rendered": "test",
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Invalid date",
+          "className": "gray",
+        },
+        "ref": null,
+        "rendered": "Invalid date",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span>
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />
+            <img
+              className="star"
+              src="./img/emptystar.png"
+            />
+          </span>,
+          <a
+            className="reviewTitle underline"
+          >
+            test
+          </a>,
+          <div
+            className="gray"
+          >
+            Invalid date
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                className="star"
+                src="./img/emptystar.png"
+              />,
+              <img
+                className="star"
+                src="./img/emptystar.png"
+              />,
+              <img
+                className="star"
+                src="./img/emptystar.png"
+              />,
+              <img
+                className="star"
+                src="./img/emptystar.png"
+              />,
+              <img
+                className="star"
+                src="./img/emptystar.png"
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "className": "star",
+                "src": "./img/emptystar.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "className": "star",
+                "src": "./img/emptystar.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "className": "star",
+                "src": "./img/emptystar.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "className": "star",
+                "src": "./img/emptystar.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "className": "star",
+                "src": "./img/emptystar.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "test",
+            "className": "reviewTitle underline",
+          },
+          "ref": null,
+          "rendered": "test",
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Invalid date",
+            "className": "gray",
+          },
+          "ref": null,
+          "rendered": "Invalid date",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

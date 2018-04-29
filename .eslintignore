@@ -1,2 +1,6 @@
 **/bundle.js
-**/sample_data.js
+database/nouns.js
+/proxy/*
+/coverage/*
+/tests/*
+/webpack.config.js

@@ -1,10 +1,11 @@
+import React from 'react';
 import style from '../../dist/style/style.css'
 
 const Stars = (props) => {
     let stars = [];
     var numStars = [60, 10, 5, 5, 20];
     for(var i = 0; i < 5; i++){
-        stars.push(<img className={style.star} src='./img/fullstar.png' />)
+        stars.push(<img key={i} className={style.star} src='./img/fullstar.png' />)
     }
 
    return (

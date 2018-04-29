@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomerImages should render correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CustomerImages
+    reviews={
+      Array [
+        "test",
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Customer images
+        </h3>,
+        <div
+          className="customerImages"
+        >
+          <img
+            src="https://source.unsplash.com/random/71x71"
+          />
+          <img
+            src="https://source.unsplash.com/random/71x71"
+          />
+          <img
+            src="https://source.unsplash.com/random/71x71"
+          />
+          <img
+            src="https://source.unsplash.com/random/71x71"
+          />
+        </div>,
+        <a
+          className="underline"
+        >
+          See all customer images
+        </a>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Customer images",
+        },
+        "ref": null,
+        "rendered": "Customer images",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              src="https://source.unsplash.com/random/71x71"
+            />,
+            <img
+              src="https://source.unsplash.com/random/71x71"
+            />,
+            <img
+              src="https://source.unsplash.com/random/71x71"
+            />,
+            <img
+              src="https://source.unsplash.com/random/71x71"
+            />,
+          ],
+          "className": "customerImages",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "src": "https://source.unsplash.com/random/71x71",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "src": "https://source.unsplash.com/random/71x71",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "src": "https://source.unsplash.com/random/71x71",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "src": "https://source.unsplash.com/random/71x71",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "See all customer images",
+          "className": "underline",
+        },
+        "ref": null,
+        "rendered": "See all customer images",
+        "type": "a",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Customer images
+          </h3>,
+          <div
+            className="customerImages"
+          >
+            <img
+              src="https://source.unsplash.com/random/71x71"
+            />
+            <img
+              src="https://source.unsplash.com/random/71x71"
+            />
+            <img
+              src="https://source.unsplash.com/random/71x71"
+            />
+            <img
+              src="https://source.unsplash.com/random/71x71"
+            />
+          </div>,
+          <a
+            className="underline"
+          >
+            See all customer images
+          </a>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Customer images",
+          },
+          "ref": null,
+          "rendered": "Customer images",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                src="https://source.unsplash.com/random/71x71"
+              />,
+              <img
+                src="https://source.unsplash.com/random/71x71"
+              />,
+              <img
+                src="https://source.unsplash.com/random/71x71"
+              />,
+              <img
+                src="https://source.unsplash.com/random/71x71"
+              />,
+            ],
+            "className": "customerImages",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "src": "https://source.unsplash.com/random/71x71",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "src": "https://source.unsplash.com/random/71x71",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "src": "https://source.unsplash.com/random/71x71",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "src": "https://source.unsplash.com/random/71x71",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "See all customer images",
+            "className": "underline",
+          },
+          "ref": null,
+          "rendered": "See all customer images",
+          "type": "a",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -1,3 +1,4 @@
+import React from 'react';
 import UserInfo from './UserInfo.jsx';
 import ReviewTitle from './ReviewTitle.jsx';
 import ReviewBody from './ReviewBody.jsx'
@@ -9,7 +10,7 @@ var ReviewListItem = (props) => {
             <UserInfo />
             <ReviewTitle review={props.review} />
             <div>
-                <span className={style.gray}>Color: {window.nouns[Math.floor(Math.random() * window.nouns.length)]}</span>
+                <span className={style.gray}>Color: seafoam</span>
                 <span className={style.seperator}>|</span>
                 <span className={style.verified}>Verified Purchase</span>
             </div>

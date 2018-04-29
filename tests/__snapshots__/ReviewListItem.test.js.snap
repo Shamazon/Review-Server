@@ -1,0 +1,591 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewListItem should render correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReviewListItem
+    review={
+      Object {
+        "body": "test",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <UserInfo />,
+        <ReviewTitle
+          review={
+            Object {
+              "body": "test",
+            }
+          }
+        />,
+        <div>
+          <span
+            className="gray"
+          >
+            Color: seafoam
+          </span>
+          <span
+            className="seperator"
+          >
+            |
+          </span>
+          <span
+            className="verified"
+          >
+            Verified Purchase
+          </span>
+        </div>,
+        <ReviewBody
+          body="test"
+        />,
+        <div
+          className="helpful gray"
+        >
+          <a
+            className="underline"
+          >
+            Comment
+          </a>
+          <span
+            className="seperator"
+          >
+            |
+          </span>
+          <span>
+             people found this review helpful. Was it helpful to you?
+          </span>
+          <button>
+            Yes
+          </button>
+          <button>
+            No
+          </button>
+          <a
+            className="aSecondary"
+          >
+            Report Abuse
+          </a>
+        </div>,
+      ],
+      "className": "mainReviewContainer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "review": Object {
+            "body": "test",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="gray"
+            >
+              Color: seafoam
+            </span>,
+            <span
+              className="seperator"
+            >
+              |
+            </span>,
+            <span
+              className="verified"
+            >
+              Verified Purchase
+            </span>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Color: seafoam",
+              "className": "gray",
+            },
+            "ref": null,
+            "rendered": "Color: seafoam",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "|",
+              "className": "seperator",
+            },
+            "ref": null,
+            "rendered": "|",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Verified Purchase",
+              "className": "verified",
+            },
+            "ref": null,
+            "rendered": "Verified Purchase",
+            "type": "span",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "body": "test",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <a
+              className="underline"
+            >
+              Comment
+            </a>,
+            <span
+              className="seperator"
+            >
+              |
+            </span>,
+            <span>
+               people found this review helpful. Was it helpful to you?
+            </span>,
+            <button>
+              Yes
+            </button>,
+            <button>
+              No
+            </button>,
+            <a
+              className="aSecondary"
+            >
+              Report Abuse
+            </a>,
+          ],
+          "className": "helpful gray",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Comment",
+              "className": "underline",
+            },
+            "ref": null,
+            "rendered": "Comment",
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "|",
+              "className": "seperator",
+            },
+            "ref": null,
+            "rendered": "|",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                " people found this review helpful. Was it helpful to you?",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              " people found this review helpful. Was it helpful to you?",
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Yes",
+            },
+            "ref": null,
+            "rendered": "Yes",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "No",
+            },
+            "ref": null,
+            "rendered": "No",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Report Abuse",
+              "className": "aSecondary",
+            },
+            "ref": null,
+            "rendered": "Report Abuse",
+            "type": "a",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <UserInfo />,
+          <ReviewTitle
+            review={
+              Object {
+                "body": "test",
+              }
+            }
+          />,
+          <div>
+            <span
+              className="gray"
+            >
+              Color: seafoam
+            </span>
+            <span
+              className="seperator"
+            >
+              |
+            </span>
+            <span
+              className="verified"
+            >
+              Verified Purchase
+            </span>
+          </div>,
+          <ReviewBody
+            body="test"
+          />,
+          <div
+            className="helpful gray"
+          >
+            <a
+              className="underline"
+            >
+              Comment
+            </a>
+            <span
+              className="seperator"
+            >
+              |
+            </span>
+            <span>
+               people found this review helpful. Was it helpful to you?
+            </span>
+            <button>
+              Yes
+            </button>
+            <button>
+              No
+            </button>
+            <a
+              className="aSecondary"
+            >
+              Report Abuse
+            </a>
+          </div>,
+        ],
+        "className": "mainReviewContainer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "review": Object {
+              "body": "test",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="gray"
+              >
+                Color: seafoam
+              </span>,
+              <span
+                className="seperator"
+              >
+                |
+              </span>,
+              <span
+                className="verified"
+              >
+                Verified Purchase
+              </span>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Color: seafoam",
+                "className": "gray",
+              },
+              "ref": null,
+              "rendered": "Color: seafoam",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "|",
+                "className": "seperator",
+              },
+              "ref": null,
+              "rendered": "|",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Verified Purchase",
+                "className": "verified",
+              },
+              "ref": null,
+              "rendered": "Verified Purchase",
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "body": "test",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a
+                className="underline"
+              >
+                Comment
+              </a>,
+              <span
+                className="seperator"
+              >
+                |
+              </span>,
+              <span>
+                 people found this review helpful. Was it helpful to you?
+              </span>,
+              <button>
+                Yes
+              </button>,
+              <button>
+                No
+              </button>,
+              <a
+                className="aSecondary"
+              >
+                Report Abuse
+              </a>,
+            ],
+            "className": "helpful gray",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Comment",
+                "className": "underline",
+              },
+              "ref": null,
+              "rendered": "Comment",
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "|",
+                "className": "seperator",
+              },
+              "ref": null,
+              "rendered": "|",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  " people found this review helpful. Was it helpful to you?",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                " people found this review helpful. Was it helpful to you?",
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Yes",
+              },
+              "ref": null,
+              "rendered": "Yes",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "No",
+              },
+              "ref": null,
+              "rendered": "No",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Report Abuse",
+                "className": "aSecondary",
+              },
+              "ref": null,
+              "rendered": "Report Abuse",
+              "type": "a",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
